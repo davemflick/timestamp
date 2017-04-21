@@ -1,0 +1,30 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "first back-end project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davemflick/timestamp.git"
+  },
+  "keywords": [
+    "node.js",
+    "express"
+  ],
+  "author": "David Flick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davemflick/timestamp/issues"
+  },
+  "homepage": "https://github.com/davemflick/timestamp#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta.12"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
