@@ -3,8 +3,15 @@ extends ./layout.pug
 block content
 	header.title
 		h1 Timestamp Microservice
-		h4 Instructions:
-		ol
-			li Pass string in Unix timestamp or natural data format to end of URL address. (1450138633 or January 1, 2017)
-			li If format is correct, both time formats appear.
-			li If format is incorrect, time properties will appear as null.
+		.instructions
+			h4 Instructions:
+			ol
+				li Add a Unix timestamp or natural date format to end of the URL address. ("/1450138633" or "/January 1, 2017")
+				li If format is correct, both time formats will appear in object form.
+				li If format is incorrect, time properties will appear as null.
+		.examples
+			h3 Examples
+			p.ex Natural:
+			a(href="http://localhost:3000/june%2015%201989") http://localhost:3000/june%2015%201989
+			p.ex Unix timestamp:
+			a(href="http://localhost:3000/1464580800") http://localhost:3000/1464580800
