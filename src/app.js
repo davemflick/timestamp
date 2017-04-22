@@ -47,6 +47,7 @@ app.get("/:unix:date", (req, res)=>{
 	res.send(req.params)
 })
 
-app.listen(3000, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
 	console.log("The frontend server is running on port 3000");
 });
+
